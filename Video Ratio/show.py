@@ -16,9 +16,10 @@ plt.title("BiliBili 稿件有效率")
 plt.legend(wedges, type,
           title="稿件状态",
           loc="center left",
-          bbox_to_anchor=(0.9,0))
+          bbox_to_anchor=(0.85,0))
 # 设置数字标签
 # for a, b in zip(type, video_counts):
 #     plt.text(a, b, b, ha='center', va='bottom', fontsize=10)
+plt.tight_layout()
 plt.savefig("show.png")
 plt.show()
