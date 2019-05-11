@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 plt.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus'] = False
 
-data = pd.read_csv("sort.txt", header=None, delimiter='	')
+data = pd.read_csv("data.txt", header=None, delimiter='	')
 video_counts = data.iloc[:, -1].values
 up_name = data.iloc[:, 1].values
 Mat = data.iloc[:, 0:3]
